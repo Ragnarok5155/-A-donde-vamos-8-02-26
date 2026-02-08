@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commodities - Hedge Fund Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">HF DASHBOARD</div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="macro.html">Macro</a></li>
+        <li><a href="riesgo.html">Riesgo</a></li>
+        <li><a href="sectores.html">Sectores</a></li>
+        <li><a href="stocks.html">Stocks</a></li>
+        <li><a href="commodities.html" class="active">Commodities</a></li>
+        <li><a href="forex.html">Forex</a></li>
+        <li><a href="crypto.html">Crypto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    
+    <header>
+      <h1>COMMODITIES DEEP DIVE</h1>
+      <span id="last-update">Cargando...</span>
+    </header>
+
+    <!-- Overview -->
+    <section>
+      <div class="commodity-banner">
+        <div class="banner-icon">📊</div>
+        <div class="banner-content">
+          <h2>CONTEXTO: Rally histórico en metales preciosos</h2>
+          <p>Oro +68% (12M), Plata +133%, Cobre +29%. DXY cayendo de 110 a 98 + M2 global 
+          expandiéndose = Viento de cola estructural para commodities.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Performance Table -->
+    <section>
+      <h2>📋 PERFORMANCE YTD Y 12M</h2>
+      
+      <div class="table-wrapper">
+        <table class="commodities-table">
+          <thead>
+            <tr>
+              <th>Commodity</th>
+              <th>Precio Actual</th>
+              <th>YTD %</th>
+              <th>12M %</th>
+              <th>Categoría</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody id="commodities-tbody">
+            <!-- JavaScript llenará esto -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Por Categoría -->
+    <section>
+      <h2>💎 METALES PRECIOSOS</h2>
+      
+      <div class="commodity-grid" id="metals-grid">
+        <!-- JavaScript -->
+      </div>
+
+      <div class="info-box success">
+        <strong>✅ THESIS:</strong> Oro y plata beneficiados por tipos reales negativos, 
+        M2 global subiendo, y DXY débil. Platino/paladio más especulativos (automoción).
+      </div>
+    </section>
+
+    <section>
+      <h2>⚡ ENERGÍA</h2>
+      
+      <div class="commodity-grid" id="energy-grid">
+        <!-- JavaScript -->
+      </div>
+
+      <div class="info-box">
+        <strong>CONTEXTO:</strong> Petróleo en rango 60-90, sin stress de oferta. 
+        Gas natural volátil (-20% 12M). Energía relativamente apagada vs metales.
+      </div>
+    </section>
+
+    <section>
+      <h2>🌾 AGRICULTURA</h2>
+      
+      <div class="commodity-grid" id="agriculture-grid">
+        <!-- JavaScript -->
+      </div>
+
+      <div class="info-box warning">
+        <strong>⚠️ OUTLOOK:</strong> Sector flojo. Trigo -13%, Maíz -14%, Soja +6% (única positiva). 
+        Edge viene de shocks puntuales (clima, guerra), no de buy & hold.
+      </div>
+    </section>
+
+    <!-- Correlaciones -->
+    <section>
+      <h2>🔗 CORRELACIONES CLAVE</h2>
+      
+      <div class="correlation-matrix">
+        <div class="corr-card">
+          <h3>DXY vs Commodities</h3>
+          <div class="corr-value negative">-0.35</div>
+          <p>Dólar débil = viento de cola para commodities (patrón clásico)</p>
+        </div>
+
+        <div class="corr-card">
+          <h3>Oro vs Inflación Esperada</h3>
+          <div class="corr-value positive">+0.42</div>
+          <p>Mejor con tipos reales cayendo que con inflación spot pura</p>
+        </div>
+
+        <div class="corr-card">
+          <h3>Cobre vs Equity</h3>
+          <div class="corr-value positive">+0.65</div>
+          <p>"Dr Copper" como indicador adelantado de ciclo industrial</p>
+        </div>
+
+        <div class="corr-card">
+          <h3>Oro vs S&P</h3>
+          <div class="corr-value neutral">+0.15</div>
+          <p>Cambio estructural 2025: antes negativa, ahora positiva (liquidez común)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ranking -->
+    <section>
+      <h2>🏆 RANKING POR POTENCIAL (2026)</h2>
+      
+      <div class="ranking-list">
+        <div class="rank-item top">
+          <div class="rank-number">#1</div>
+          <div class="rank-content">
+            <h3>🥇 ORO</h3>
+            <p><strong>$4,979/oz</strong> | +68% (12M)</p>
+            <p class="rank-thesis">Único con justificación estructural fuerte. Tipos reales 
+            negativos + M2 global + DXY débil. Peso relevante en cartera 3-5 años.</p>
+          </div>
+          <div class="rank-score">9.5/10</div>
+        </div>
+
+        <div class="rank-item top">
+          <div class="rank-number">#2</div>
+          <div class="rank-content">
+            <h3>🟠 COBRE</h3>
+            <p><strong>$5.88/lb</strong> | +29% (12M)</p>
+            <p class="rank-thesis">Cuello de botella de electrificación. Oferta limitada, 
+            demanda secular. Riesgo: sensible a China.</p>
+          </div>
+          <div class="rank-score">8.5/10</div>
+        </div>
+
+        <div class="rank-item mid">
+          <div class="rank-number">#3</div>
+          <div class="rank-content">
+            <h3>🛢️ PETRÓLEO</h3>
+            <p><strong>$63.55/barril</strong> | -12% (12M)</p>
+            <p class="rank-thesis">Rango 60-90. Exposure vía XLE + SLB mejor que futuros. 
+            CAPEX bajo = oferta contenida.</p>
+          </div>
+          <div class="rank-score">6.5/10</div>
+        </div>
+
+        <div class="rank-item low">
+          <div class="rank-number">#4</div>
+          <div class="rank-content">
+            <h3>🌾 AGRICULTURA</h3>
+            <p><strong>Granos mixtos</strong> | -13% a +6% (12M)</p>
+            <p class="rank-thesis">Sin catalizador estructural. Solo para shocks tácticos 
+            (clima, geopolítica).</p>
+          </div>
+          <div class="rank-score">4.0/10</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recomendación -->
+    <section class="action-box">
+      <h2>⚡ ESTRATEGIA DE EXPOSICIÓN</h2>
+      
+      <div class="exposure-grid">
+        <div class="exposure-card">
+          <h3>🥇 ORO (Core)</h3>
+          <div class="exposure-allocation">5-10% portfolio</div>
+          <ul>
+            <li><strong>Vehículos:</strong> GLD (ETF), futuros GC, oro físico</li>
+            <li><strong>Entry:</strong> Mantener posición estructural</li>
+            <li><strong>Aumentar si:</strong> Tipos reales caen fuerte o Fed pivotea dovish</li>
+          </ul>
+        </div>
+
+        <div class="exposure-card">
+          <h3>🟠 COBRE (Satélite)</h3>
+          <div class="exposure-allocation">2-5% portfolio</div>
+          <ul>
+            <li><strong>Vehículos:</strong> FCX (equity), futuros HG, COPX (ETF)</li>
+            <li><strong>Entry:</strong> Dips bajo $5.50/lb</li>
+            <li><strong>Riesgo:</strong> Muy cíclico, sensible a China</li>
+          </ul>
+        </div>
+
+        <div class="exposure-card">
+          <h3>🛢️ ENERGÍA (Táctico)</h3>
+          <div class="exposure-allocation">3-7% portfolio</div>
+          <ul>
+            <li><strong>Vehículos:</strong> XLE, SLB, EOG (equities mejor que futuros)</li>
+            <li><strong>Entry:</strong> WTI $56-60 zona de valor</li>
+            <li><strong>Evitar:</strong> USO (ETF con roll-risk)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="commodities.js"></script>
+</body>
+</html>

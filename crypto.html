@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto - Hedge Fund Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">HF DASHBOARD</div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="macro.html">Macro</a></li>
+        <li><a href="riesgo.html">Riesgo</a></li>
+        <li><a href="sectores.html">Sectores</a></li>
+        <li><a href="stocks.html">Stocks</a></li>
+        <li><a href="commodities.html">Commodities</a></li>
+        <li><a href="forex.html">Forex</a></li>
+        <li><a href="crypto.html" class="active">Crypto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    
+    <header>
+      <h1>CRIPTOMONEDAS</h1>
+      <span id="last-update">Cargando...</span>
+    </header>
+
+    <!-- Context -->
+    <section>
+      <div class="crypto-banner warning">
+        <div class="banner-icon">⚠️</div>
+        <div class="banner-content">
+          <h2>RÉGIMEN: Post-corrección desde blow-off top</h2>
+          <p>BTC de >120k a ~70k (-27% 12M). ETH -25%, SOL -47%. NO es bear market estructural, 
+          es flush post-burbuja con liquidez aún positiva. Capital concentrándose en BTC/ETH.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Performance -->
+    <section>
+      <h2>📊 PERFORMANCE MAJORS (Últimos 12M)</h2>
+      
+      <div class="crypto-grid">
+        <div class="crypto-card btc">
+          <div class="crypto-icon">₿</div>
+          <h3>BITCOIN</h3>
+          <div class="crypto-price">$70,580</div>
+          <div class="crypto-perf negative">-27.1%</div>
+          <div class="crypto-meta">
+            <span>Pico: $120k+</span>
+            <span>Avg ETF: $65k</span>
+          </div>
+        </div>
+
+        <div class="crypto-card eth">
+          <div class="crypto-icon">Ξ</div>
+          <h3>ETHEREUM</h3>
+          <div class="crypto-price">$2,063</div>
+          <div class="crypto-perf negative">-24.6%</div>
+          <div class="crypto-meta">
+            <span>Pico: ~$5k</span>
+            <span>Ecosistema L2</span>
+          </div>
+        </div>
+
+        <div class="crypto-card sol">
+          <div class="crypto-icon">◎</div>
+          <h3>SOLANA</h3>
+          <div class="crypto-price">$87.46</div>
+          <div class="crypto-perf negative">-46.6%</div>
+          <div class="crypto-meta">
+            <span>Pico: $200+</span>
+            <span>Alta beta</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <strong>MARKET CAP:</strong> Total cripto 2.37T (desde pico 4.17T). 
+        OTHERS (ex-top10) bajó de 11.5% a 7.3% → Flight to quality intra-cripto.
+      </div>
+    </section>
+
+    <!-- Allocation -->
+    <section>
+      <h2>💼 ALLOCATION PROPUESTA</h2>
+      
+      <div class="allocation-warning">
+        <h3>⚠️ LÍMITE DURO</h3>
+        <div class="limit-value">10% máximo</div>
+        <p>Del patrimonio líquido total en cripto. Estructura core/satélite.</p>
+      </div>
+
+      <div class="allocation-grid">
+        <div class="alloc-card">
+          <h3>BTC Core</h3>
+          <div class="alloc-percent">60%</div>
+          <div class="alloc-note">6% del portfolio total</div>
+          <p>Núcleo secular. Líquido, mejor perfil institucional.</p>
+        </div>
+
+        <div class="alloc-card">
+          <h3>ETH</h3>
+          <div class="alloc-percent">25%</div>
+          <div class="alloc-note">2.5% del portfolio total</div>
+          <p>Infraestructura smart-contracts/L2. Más riesgo que BTC.</p>
+        </div>
+
+        <div class="alloc-card">
+          <h3>Large Cap Alts</h3>
+          <div class="alloc-percent">10%</div>
+          <div class="alloc-note">1% del portfolio total</div>
+          <p>SOL + 1-2 alts top-10. Riesgo consciente.</p>
+        </div>
+
+        <div class="alloc-card">
+          <h3>Mid Cap</h3>
+          <div class="alloc-percent">5%</div>
+          <div class="alloc-note">0.5% del portfolio total</div>
+          <p>Casino controlado. Solo si hay edge claro.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ETF Flows -->
+    <section>
+      <h2>📈 ETF SPOT BTC - ANÁLISIS DE FLOWS</h2>
+      
+      <div class="etf-analysis">
+        <div class="etf-stat">
+          <h3>Average Buy Price</h3>
+          <div class="etf-value">~$60-65k</div>
+          <p>Zona de costo medio institucional. Precio actual $70k = aún en beneficio, 
+          pero sin colchón amplio.</p>
+        </div>
+
+        <div class="etf-stat">
+          <h3>Flows Recientes</h3>
+          <div class="etf-value negative">Outflows</div>
+          <p>Desde nov-25: salidas netas crecientes coincidiendo con caída 90k→70k. 
+          Fase actual = distribución institucional.</p>
+        </div>
+
+        <div class="etf-stat">
+          <h3>Conclusión</h3>
+          <div class="etf-value warning">⚠️ Sin dolor máximo</div>
+          <p>Mientras precio >65k, no hay venta forzada. Ruptura bajo 60k = siguiente tramo 
+          de corrección violenta.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reglas -->
+    <section>
+      <h2>📜 REGLAS CUANTITATIVAS</h2>
+      
+      <div class="crypto-rules-grid">
+        <div class="rule-card">
+          <h3>🎯 Acumulación</h3>
+          <p><strong>Regla:</strong> Comprar cuando BTC < MA(200) - 1.5σ</p>
+          <p>Histórico: Señales claras en marzo-2020, mid-2022. Hoy NO estamos ahí.</p>
+          <p><strong>Actual:</strong> ~70k tras rally previo a >120k. Esperá zonas de capitulación real.</p>
+        </div>
+
+        <div class="rule-card">
+          <h3>💰 Take Profit</h3>
+          <p><strong>Regla BTC táctico:</strong> 25% cada +20% de subida (1.2x, 1.4x, 1.6x...)</p>
+          <p>BTC core: rebalanceo por pesos, NO por P&L triggers.</p>
+          <p>Evita round-trips completos (70k→120k→70k).</p>
+        </div>
+
+        <div class="rule-card">
+          <h3>🛑 Stops</h3>
+          <p><strong>BTC core:</strong> Sin hard stop. La defensa es el tamaño (6% máx).</p>
+          <p><strong>BTC táctico:</strong> -20-25% desde entry (ej: 55k si entras en 70k).</p>
+          <p><strong>ETH/Alts:</strong> -30 a -40%. Si saltan, reduce bucket alts 50%.</p>
+        </div>
+
+        <div class="rule-card">
+          <h3>🔗 Correlación QQQ</h3>
+          <p><strong>Regla:</strong> Reducir 30% cripto cuando corr BTC-QQQ 90d >0.8</p>
+          <p>Efecto: Reduce daño en shocks macro que afectan todo risk-on.</p>
+          <p>Portfolio ya tiene mucho growth/tech; reducir cripto evita concentración extrema.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recomendación -->
+    <section class="action-box">
+      <h2>⚡ SÍNTESIS OPERATIVA</h2>
+      
+      <div class="crypto-synthesis">
+        <div class="synth-card">
+          <h3>✅ Qué TIENE sentido</h3>
+          <ul>
+            <li>BTC como satélite 1-5% patrimonio líquido</li>
+            <li>ETH algo menos, SOL/alts solo en bucket especulativo</li>
+            <li>Usar MA200/MVRV para decidir cuándo aumentar</li>
+            <li>Mirar ETF flows + zona coste medio (60-65k) como niveles críticos</li>
+          </ul>
+        </div>
+
+        <div class="synth-card">
+          <h3>❌ Qué NO tiene sentido</h3>
+          <ul>
+            <li>Vender todo porque "cripto está muerto" (no lo está)</li>
+            <li>Comprar como degenerado porque cayó 30% (es ruido)</li>
+            <li>Alt season ahora (OTHERS cayó de 11.5% a 7.3%)</li>
+            <li>Apalancarte 10x en perps non-KYC (eso es gambling)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info-box warning">
+        <strong>⚠️ DISCLAIMER:</strong> Cripto aquí NO es "donde te hacés rico". 
+        Es el turbo de un portfolio ya agresivo en renta variable y commodities. 
+        El único motivo para tenerlo es porque limitás peso al 10%, separás core de táctico, 
+        y aplicás reglas objetivas.
+      </div>
+    </section>
+
+  </div>
+
+  <script src="crypto.js"></script>
+</body>
+</html>

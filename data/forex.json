@@ -1,0 +1,89 @@
+{
+  "lastUpdate": "2026-02-08",
+  "trades": [
+    {
+      "pair": "EURUSD",
+      "direction": "long",
+      "status": "active",
+      "entry": "1.17-1.18",
+      "target": "1.24",
+      "stop": "1.14",
+      "rr": "2:1",
+      "risk": 1.5,
+      "timeframe": "6-18m",
+      "rationale": "Fed recortando más rápido que BCE. DXY <100. EUR rompió rango 1.10-1.12."
+    },
+    {
+      "pair": "GBPUSD",
+      "direction": "long",
+      "status": "active",
+      "entry": "1.35-1.36",
+      "target": "1.42",
+      "stop": "1.31",
+      "rr": "2:1",
+      "risk": 1.0,
+      "timeframe": "6-12m",
+      "rationale": "BoE con tipos altos. Se beneficia de USD débil pero con algo más de fragilidad macro."
+    },
+    {
+      "pair": "AUDUSD",
+      "direction": "long",
+      "status": "active",
+      "entry": "0.695-0.705",
+      "target": "0.76",
+      "stop": "0.675",
+      "rr": "3:1",
+      "risk": 1.5,
+      "timeframe": "6-18m",
+      "rationale": "RBA hawkish, cobre/commodities fuertes. AUD correlacionado ~0.7 con cobre."
+    },
+    {
+      "pair": "USDJPY",
+      "direction": "short",
+      "status": "active",
+      "entry": "156-158",
+      "target": "148",
+      "stop": "162",
+      "rr": "1.7:1",
+      "risk": 1.0,
+      "timeframe": "3-12m",
+      "rationale": "Yen sobre-depreciado. BoJ normaliza lentamente. Trade contracorriente, size pequeño."
+    },
+    {
+      "pair": "EURJPY",
+      "direction": "long",
+      "status": "active",
+      "entry": "184-186",
+      "target": "195",
+      "stop": "178",
+      "rr": "1.6:1",
+      "risk": 0.8,
+      "timeframe": "3-12m",
+      "rationale": "Diferencial ECB>BoJ sin exposición directa USD. Complementa short USDJPY."
+    },
+    {
+      "pair": "EURGBP",
+      "direction": "long",
+      "status": "active",
+      "entry": "0.86-0.865",
+      "target": "0.89",
+      "stop": "0.845",
+      "rr": "2:1",
+      "risk": 0.7,
+      "timeframe": "6-12m",
+      "rationale": "Europa rebota mejor que UK si BoE se ve forzado a recortar antes."
+    },
+    {
+      "pair": "USDCNY",
+      "direction": "short",
+      "status": "watch",
+      "entry": "6.90-7.00",
+      "target": "6.70",
+      "stop": "7.15",
+      "rr": "2:1",
+      "risk": 0.5,
+      "timeframe": "12-24m",
+      "rationale": "USD débil estructural. PBoC permite apreciación suave si crece estabiliza. Size mínimo por riesgo político."
+    }
+  ]
+}

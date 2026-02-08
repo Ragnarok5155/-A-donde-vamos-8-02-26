@@ -1,0 +1,105 @@
+{
+  "lastUpdate": "2026-02-08",
+  "commodities": [
+    {
+      "name": "Oro",
+      "price": "4,979",
+      "unit": " USD/oz",
+      "perfYTD": 10.6,
+      "perf12M": 68.0,
+      "category": "metals",
+      "score": 9.5,
+      "note": "Máximos históricos, beneficiado por M2 global y DXY débil"
+    },
+    {
+      "name": "Plata",
+      "price": "76.9",
+      "unit": " USD/oz",
+      "perfYTD": -3.1,
+      "perf12M": 132.7,
+      "category": "metals",
+      "score": 7.5,
+      "note": "Rally explosivo, corrección reciente desde spike >100"
+    },
+    {
+      "name": "Cobre",
+      "price": "5.88",
+      "unit": " USD/lb",
+      "perfYTD": 0.0,
+      "perf12M": 29.0,
+      "category": "metals",
+      "score": 8.5,
+      "note": "Superciclo de electrificación, oferta limitada"
+    },
+    {
+      "name": "Platino",
+      "price": "2,099",
+      "unit": " USD/oz",
+      "perfYTD": -8.6,
+      "perf12M": 112.9,
+      "category": "metals",
+      "score": 6.0,
+      "note": "Volátil, ligado a automoción, corrección reciente"
+    },
+    {
+      "name": "Paladio",
+      "price": "1,741",
+      "unit": " USD/oz",
+      "perfYTD": -6.9,
+      "perf12M": 75.9,
+      "category": "metals",
+      "score": 5.5,
+      "note": "Similar a platino, más especulativo"
+    },
+    {
+      "name": "Petróleo WTI",
+      "price": "63.55",
+      "unit": " USD/bbl",
+      "perfYTD": 7.5,
+      "perf12M": -11.9,
+      "category": "energy",
+      "score": 6.5,
+      "note": "Rango 60-90, CAPEX bajo mantiene oferta contenida"
+    },
+    {
+      "name": "Gas Natural",
+      "price": "3.42",
+      "unit": " USD/MMBtu",
+      "perfYTD": 8.2,
+      "perf12M": -20.1,
+      "category": "energy",
+      "score": 4.0,
+      "note": "Muy volátil, sin catalizador claro"
+    },
+    {
+      "name": "Trigo",
+      "price": "529.6",
+      "unit": " cents/bu",
+      "perfYTD": 2.4,
+      "perf12M": -12.7,
+      "category": "agriculture",
+      "score": 4.0,
+      "note": "Flojo, sin stress de oferta"
+    },
+    {
+      "name": "Maíz",
+      "price": "430.2",
+      "unit": " cents/bu",
+      "perfYTD": -3.5,
+      "perf12M": -13.5,
+      "category": "agriculture",
+      "score": 3.5,
+      "note": "Débil, sin catalizador"
+    },
+    {
+      "name": "Soja",
+      "price": "1,115.2",
+      "unit": " cents/bu",
+      "perfYTD": 5.0,
+      "perf12M": 6.4,
+      "category": "agriculture",
+      "score": 5.0,
+      "note": "Única agrícola positiva en 12M"
+    }
+  ]
+}

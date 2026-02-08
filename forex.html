@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forex - Hedge Fund Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">HF DASHBOARD</div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="macro.html">Macro</a></li>
+        <li><a href="riesgo.html">Riesgo</a></li>
+        <li><a href="sectores.html">Sectores</a></li>
+        <li><a href="stocks.html">Stocks</a></li>
+        <li><a href="commodities.html">Commodities</a></li>
+        <li><a href="forex.html" class="active">Forex</a></li>
+        <li><a href="crypto.html">Crypto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    
+    <header>
+      <h1>FOREX ANALYSIS</h1>
+      <span id="last-update">Cargando...</span>
+    </header>
+
+    <!-- Context -->
+    <section>
+      <div class="forex-banner">
+        <div class="banner-icon">💱</div>
+        <div class="banner-content">
+          <h2>SESGO: USD débil cíclico</h2>
+          <p>DXY de 110 a 98 (-9% 12M). Fed recortando más rápido que ECB/RBA. 
+          M2 global expandiéndose. Viento de cola para EUR, AUD, y EM FX.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trades Activos -->
+    <section>
+      <h2>💼 TRADES ACTIVOS (7 posiciones)</h2>
+      
+      <div class="forex-trades" id="forex-trades">
+        <!-- JavaScript -->
+      </div>
+    </section>
+
+    <!-- Risk Management -->
+    <section>
+      <h2>⚖️ RISK MANAGEMENT</h2>
+      
+      <div class="risk-mgmt-grid">
+        <div class="risk-card">
+          <h3>Riesgo por Trade</h3>
+          <div class="risk-value">1.0 - 1.5%</div>
+          <p>Del equity total. Stops siempre en precio, no en "sensaciones".</p>
+        </div>
+
+        <div class="risk-card">
+          <h3>Riesgo Total</h3>
+          <div class="risk-value">5 - 6%</div>
+          <p>Máximo simultáneo. Filtro de correlación limita trades short-USD a 2-3 máx.</p>
+        </div>
+
+        <div class="risk-card">
+          <h3>R:R Mínimo</h3>
+          <div class="risk-value">1.5:1</div>
+          <p>Mayoría de trades 2:1 o superior. Filtro absoluto: >1.3:1</p>
+        </div>
+
+        <div class="risk-card">
+          <h3>Drawdown Trigger</h3>
+          <div class="risk-value">-5%</div>
+          <p>Si DD desde máximo >5%, reducir sizing 50% hasta recuperar la mitad.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bancos Centrales -->
+    <section>
+      <h2>🏦 DIVERGENCIA DE BANCOS CENTRALES</h2>
+      
+      <div class="central-banks">
+        <div class="cb-card">
+          <h3>🇺🇸 FED</h3>
+          <div class="cb-rate">3.50 - 3.75%</div>
+          <div class="cb-bias dovish">Moderadamente Dovish</div>
+          <p>Mercado descuenta 1-2 recortes extra hacia 3%. Menos carry USD.</p>
+        </div>
+
+        <div class="cb-card">
+          <h3>🇪🇺 ECB</h3>
+          <div class="cb-rate">2.00%</div>
+          <div class="cb-bias neutral">Watchful Neutral</div>
+          <p>En hold, sin prisa por mover. Si Fed recorta antes, EUR se beneficia.</p>
+        </div>
+
+        <div class="cb-card">
+          <h3>🇬🇧 BoE</h3>
+          <div class="cb-rate">3.75%</div>
+          <div class="cb-bias neutral">Lento a recortar</div>
+          <p>GBP tiene carry razonable, sigue más al ciclo de riesgo que tipos puros.</p>
+        </div>
+
+        <div class="cb-card">
+          <h3>🇯🇵 BoJ</h3>
+          <div class="cb-rate">0.75%</div>
+          <div class="cb-bias hawkish">Normalización gradual</div>
+          <p>Subió a máximo 30 años, pero diferencial vs US/UK sigue enorme.</p>
+        </div>
+
+        <div class="cb-card">
+          <h3>🇦🇺 RBA</h3>
+          <div class="cb-rate">3.85%</div>
+          <div class="cb-bias hawkish">Hawkish relativo</div>
+          <p>Subió 25bps en feb-26. Inflación 3.8%. AUD ofrece carry + beta commodities.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Correlaciones -->
+    <section>
+      <h2>🔗 MATRIZ DE CORRELACIONES</h2>
+      
+      <div class="info-box">
+        <strong>NOTA:</strong> Correlación cualitativa entre trades para evitar concentración de riesgo.
+      </div>
+
+      <div class="correlation-grid">
+        <div class="corr-item high">
+          <div class="corr-pair">EURUSD ↔ GBPUSD</div>
+          <div class="corr-level">Alta (+0.85)</div>
+          <p>Ambos "short USD". Limitar a 2 trades simultáneos.</p>
+        </div>
+
+        <div class="corr-item high">
+          <div class="corr-pair">EURUSD ↔ AUDUSD</div>
+          <div class="corr-level">Media-Alta (+0.65)</div>
+          <p>Mismo driver (USD débil), AUD con beta commodities.</p>
+        </div>
+
+        <div class="corr-item mid">
+          <div class="corr-pair">USDJPY ↔ EURJPY</div>
+          <div class="corr-level">Media (+0.50)</div>
+          <p>Comparten pata JPY pero sentidos opuestos.</p>
+        </div>
+
+        <div class="corr-item low">
+          <div class="corr-pair">EURGBP ↔ USD pares</div>
+          <div class="corr-level">Baja (+0.15)</div>
+          <p>Relación intra-Europa, casi neutro al USD.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reglas -->
+    <section class="action-box">
+      <h2>📜 REGLAS CUANTITATIVAS</h2>
+      
+      <div class="rules-grid">
+        <div class="rule-card">
+          <h3>🎯 Entry</h3>
+          <ul>
+            <li>Solo largos si precio > MA(200) diaria</li>
+            <li>RSI(14) H4 entre 30-45 a favor del trade</li>
+            <li>NO entrar en breakouts con RSI >70</li>
+            <li>Confirmar que dirección no va contra divergencia de tipos</li>
+          </ul>
+        </div>
+
+        <div class="rule-card">
+          <h3>🛑 Stops</h3>
+          <ul>
+            <li>Stop inicial según tabla (1-1.5% equity)</li>
+            <li>Al alcanzar 1R, cerrar 50% y mover stop a breakeven</li>
+            <li>Dejar correr hasta objetivo o señal de reversión</li>
+            <li>NO mover stops en contra del trade</li>
+          </ul>
+        </div>
+
+        <div class="rule-card">
+          <h3>📊 Sizing</h3>
+          <ul>
+            <li>Fijo 1-1.5% por trade (NO Kelly)</li>
+            <li>Máx 2 trades short-USD vs G3 simultáneos</li>
+            <li>Si tercer setup dispara, reemplazar o mitad de size</li>
+            <li>Calculadora: (Equity × Risk%) / (Entry - Stop en pips × valor pip)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="forex.js"></script>
+</body>
+</html>

@@ -1464,3 +1464,751 @@ code {
     gap: 2rem;
   }
 }
+
+/* COMMODITIES */
+.commodity-banner {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.commodities-table tbody tr:hover {
+  background: #1f2937;
+  cursor: pointer;
+}
+
+.category-badge {
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.category-badge.metals {
+  background: rgba(251, 191, 36, 0.2);
+  color: #fbbf24;
+}
+
+.category-badge.energy {
+  background: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+}
+
+.category-badge.agriculture {
+  background: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+}
+
+.score-badge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.score-badge.high {
+  background: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+}
+
+.score-badge.mid {
+  background: rgba(249, 115, 22, 0.2);
+  color: #f97316;
+}
+
+.score-badge.low {
+  background: rgba(107, 114, 128, 0.2);
+  color: #9ca3af;
+}
+
+.commodity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.commodity-card {
+  background: #111827;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 2px solid #374151;
+  transition: transform 0.2s;
+}
+
+.commodity-card:hover {
+  transform: translateY(-3px);
+  border-color: #3b82f6;
+}
+
+.comm-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.comm-header h3 {
+  margin: 0;
+}
+
+.comm-perf {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.comm-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #60a5fa;
+  margin-bottom: 0.5rem;
+}
+
+.comm-note {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  line-height: 1.5;
+}
+
+.correlation-matrix {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.corr-card {
+  background: #111827;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.corr-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #9ca3af;
+}
+
+.corr-value {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.corr-value.positive {
+  color: #10b981;
+}
+
+.corr-value.negative {
+  color: #ef4444;
+}
+
+.corr-value.neutral {
+  color: #9ca3af;
+}
+
+.corr-card p {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  margin: 0;
+}
+
+.ranking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.rank-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  background: #111827;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 2px solid;
+}
+
+.rank-item.top {
+  border-color: #10b981;
+}
+
+.rank-item.mid {
+  border-color: #f59e0b;
+}
+
+.rank-item.low {
+  border-color: #6b7280;
+}
+
+.rank-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #6b7280;
+  min-width: 60px;
+  text-align: center;
+}
+
+.rank-content {
+  flex: 1;
+}
+
+.rank-content h3 {
+  margin-bottom: 0.5rem;
+}
+
+.rank-content p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+
+.rank-thesis {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.rank-score {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3b82f6;
+  min-width: 100px;
+  text-align: center;
+}
+
+.exposure-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.exposure-card {
+  background: #111827;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.exposure-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.exposure-allocation {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3b82f6;
+  margin-bottom: 1rem;
+}
+
+.exposure-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.exposure-card li {
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #d1d5db;
+}
+
+/* FOREX */
+.forex-banner {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.forex-trades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.forex-card {
+  background: #111827;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 2px solid;
+}
+
+.forex-card.long {
+  border-color: #10b981;
+}
+
+.forex-card.short {
+  border-color: #ef4444;
+}
+
+.forex-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.forex-pair {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #60a5fa;
+}
+
+.forex-status {
+  font-size: 0.9rem;
+  padding: 0.3rem 0.8rem;
+  background: #1f2937;
+  border-radius: 6px;
+}
+
+.forex-direction {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.forex-direction.long {
+  background: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+}
+
+.forex-direction.short {
+  background: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+}
+
+.forex-levels {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.level-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.level-label {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.level-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.forex-meta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  background: #1f2937;
+  border-radius: 6px;
+}
+
+.meta-item {
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+.forex-rationale {
+  font-size: 0.9rem;
+  color: #d1d5db;
+  line-height: 1.5;
+}
+
+.risk-mgmt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.risk-card {
+  background: #111827;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.risk-card h3 {
+  font-size: 1rem;
+  color: #9ca3af;
+  margin-bottom: 1rem;
+}
+
+.risk-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3b82f6;
+  margin-bottom: 0.5rem;
+}
+
+.risk-card p {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  margin: 0;
+}
+
+.central-banks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cb-card {
+  background: #111827;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 2px solid #374151;
+}
+
+.cb-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.cb-rate {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #60a5fa;
+  margin-bottom: 0.5rem;
+}
+
+.cb-bias {
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.cb-bias.dovish {
+  background: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+}
+
+.cb-bias.neutral {
+  background: rgba(249, 115, 22, 0.2);
+  color: #f97316;
+}
+
+.cb-bias.hawkish {
+  background: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+}
+
+.cb-card p {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.correlation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.corr-item {
+  background: #111827;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 2px solid;
+}
+
+.corr-item.high {
+  border-color: #ef4444;
+}
+
+.corr-item.mid {
+  border-color: #f59e0b;
+}
+
+.corr-item.low {
+  border-color: #6b7280;
+}
+
+.corr-pair {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.corr-level {
+  font-size: 1rem;
+  color: #9ca3af;
+  margin-bottom: 0.5rem;
+}
+
+.corr-item p {
+  font-size: 0.9rem;
+  color: #d1d5db;
+  margin: 0;
+}
+
+.rules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.rule-card {
+  background: #111827;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.rule-card h3 {
+  margin-bottom: 1rem;
+  color: #60a5fa;
+}
+
+.rule-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rule-card li {
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #d1d5db;
+}
+
+.rule-card li:before {
+  content: "→ ";
+  color: #3b82f6;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+/* CRYPTO */
+.crypto-banner.warning {
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+}
+
+.crypto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.crypto-card {
+  background: #111827;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid;
+}
+
+.crypto-card.btc {
+  border-color: #f59e0b;
+}
+
+.crypto-card.eth {
+  border-color: #3b82f6;
+}
+
+.crypto-card.sol {
+  border-color: #8b5cf6;
+}
+
+.crypto-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.crypto-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #9ca3af;
+}
+
+.crypto-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #60a5fa;
+  margin-bottom: 0.5rem;
+}
+
+.crypto-perf {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.crypto-meta {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+.allocation-warning {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.allocation-warning h3 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.limit-value {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.allocation-warning p {
+  color: #fecaca;
+  margin: 0;
+}
+
+.allocation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.alloc-card {
+  background: #111827;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.alloc-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.alloc-percent {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #3b82f6;
+  margin-bottom: 0.3rem;
+}
+
+.alloc-note {
+  font-size: 0.9rem;
+  color: #f59e0b;
+  margin-bottom: 1rem;
+}
+
+.alloc-card p {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  margin: 0;
+}
+
+.etf-analysis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.etf-stat {
+  background: #111827;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.etf-stat h3 {
+  font-size: 1rem;
+  color: #9ca3af;
+  margin-bottom: 1rem;
+}
+
+.etf-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.etf-value.warning {
+  color: #f59e0b;
+}
+
+.etf-stat p {
+  font-size: 0.9rem;
+  color: #d1d5db;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.crypto-rules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.crypto-synthesis {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.synth-card {
+  background: #111827;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.synth-card h3 {
+  margin-bottom: 1rem;
+}
+
+.synth-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.synth-card li {
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+  color: #d1d5db;
+}
+
+.synth-card li:before {
+  content: "• ";
+  color: #3b82f6;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .crypto-synthesis {
+    grid-template-columns: 1fr;
+  }
+}

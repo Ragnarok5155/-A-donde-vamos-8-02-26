@@ -1,0 +1,32 @@
+{
+  "lastUpdate": "2026-02-08",
+  "assets": [
+    {
+      "symbol": "BTC",
+      "name": "Bitcoin",
+      "price": 70580,
+      "perf12M": -27.1,
+      "peak": 120000,
+      "avgETF": 65000
+    },
+    {
+      "symbol": "ETH",
+      "name": "Ethereum",
+      "price": 2063,
+      "perf12M": -24.6,
+      "peak": 5000
+    },
+    {
+      "symbol": "SOL",
+      "name": "Solana",
+      "price": 87.46,
+      "perf12M": -46.6,
+      "peak": 200
+    }
+  ],
+  "marketCap": {
+    "total": 2.37,
+    "peak": 4.17,
+    "othersPercent": 7.3
+  }
+}
