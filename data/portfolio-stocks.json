@@ -1,0 +1,322 @@
+{
+  "lastUpdate": "2026-02-08",
+  "summary": {
+    "totalValue": 2840500,
+    "perfYTD": 8.4,
+    "perf12M": 22.7,
+    "volatility": 14.2,
+    "sharpe": 1.38,
+    "beta": 0.92
+  },
+  "sectorAllocation": [
+    { "name": "Materials", "percent": 18.5 },
+    { "name": "Defense", "percent": 14.0 },
+    { "name": "Energy", "percent": 13.5 },
+    { "name": "Industrials", "percent": 12.0 },
+    { "name": "Healthcare", "percent": 15.5 },
+    { "name": "Tech", "percent": 18.0 },
+    { "name": "Staples", "percent": 6.0 },
+    { "name": "Other", "percent": 2.5 }
+  ],
+  "holdings": [
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet",
+      "sector": "Tech",
+      "shares": 800,
+      "avgCost": 285.50,
+      "currentPrice": 322.90,
+      "value": 258320,
+      "weight": 9.1,
+      "pl": 29920,
+      "plPercent": 13.1
+    },
+    {
+      "ticker": "UNH",
+      "name": "UnitedHealth",
+      "sector": "Healthcare",
+      "shares": 650,
+      "avgCost": 245.20,
+      "currentPrice": 276.70,
+      "value": 179855,
+      "weight": 6.3,
+      "pl": 20475,
+      "plPercent": 12.9
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom",
+      "sector": "Tech",
+      "shares": 450,
+      "avgCost": 298.40,
+      "currentPrice": 328.00,
+      "value": 147600,
+      "weight": 5.2,
+      "pl": 13320,
+      "plPercent": 9.9
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "sector": "Defense",
+      "shares": 300,
+      "avgCost": 580.00,
+      "currentPrice": 623.60,
+      "value": 187080,
+      "weight": 6.6,
+      "pl": 13080,
+      "plPercent": 7.5
+    },
+    {
+      "ticker": "RTX",
+      "name": "RTX Corp",
+      "sector": "Defense",
+      "shares": 1000,
+      "avgCost": 185.30,
+      "currentPrice": 196.00,
+      "value": 196000,
+      "weight": 6.9,
+      "pl": 10700,
+      "plPercent": 5.8
+    },
+    {
+      "ticker": "ETN",
+      "name": "Eaton",
+      "sector": "Industrials",
+      "shares": 500,
+      "avgCost": 325.00,
+      "currentPrice": 351.40,
+      "value": 175700,
+      "weight": 6.2,
+      "pl": 13200,
+      "plPercent": 8.1
+    },
+    {
+      "ticker": "LIN",
+      "name": "Linde",
+      "sector": "Materials",
+      "shares": 400,
+      "avgCost": 445.00,
+      "currentPrice": 463.60,
+      "value": 185440,
+      "weight": 6.5,
+      "pl": 7440,
+      "plPercent": 4.2
+    },
+    {
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan",
+      "sector": "Materials",
+      "shares": 3500,
+      "avgCost": 58.20,
+      "currentPrice": 64.70,
+      "value": 226450,
+      "weight": 8.0,
+      "pl": 22750,
+      "plPercent": 11.2
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "sector": "Energy",
+      "shares": 4000,
+      "avgCost": 46.80,
+      "currentPrice": 49.50,
+      "value": 198000,
+      "weight": 7.0,
+      "pl": 10800,
+      "plPercent": 5.8
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "sector": "Energy",
+      "shares": 1200,
+      "avgCost": 105.50,
+      "currentPrice": 113.70,
+      "value": 136440,
+      "weight": 4.8,
+      "pl": 9840,
+      "plPercent": 7.8
+    },
+    {
+      "ticker": "ISRG",
+      "name": "Intuitive Surgical",
+      "sector": "Healthcare",
+      "shares": 250,
+      "avgCost": 445.00,
+      "currentPrice": 489.10,
+      "value": 122275,
+      "weight": 4.3,
+      "pl": 11025,
+      "plPercent": 9.9
+    },
+    {
+      "ticker": "LLY",
+      "name": "Eli Lilly",
+      "sector": "Healthcare",
+      "shares": 120,
+      "avgCost": 825.00,
+      "currentPrice": 1058.00,
+      "value": 126960,
+      "weight": 4.5,
+      "pl": 27960,
+      "plPercent": 28.2
+    },
+    {
+      "ticker": "DHR",
+      "name": "Danaher",
+      "sector": "Healthcare",
+      "shares": 400,
+      "avgCost": 205.00,
+      "currentPrice": 216.60,
+      "value": 86640,
+      "weight": 3.1,
+      "pl": 4640,
+      "plPercent": 5.7
+    },
+    {
+      "ticker": "GE",
+      "name": "GE Aerospace",
+      "sector": "Industrials",
+      "shares": 450,
+      "avgCost": 298.00,
+      "currentPrice": 321.00,
+      "value": 144450,
+      "weight": 5.1,
+      "pl": 10350,
+      "plPercent": 7.7
+    },
+    {
+      "ticker": "XLB",
+      "name": "Materials ETF",
+      "sector": "Materials",
+      "shares": 2000,
+      "avgCost": 48.50,
+      "currentPrice": 51.51,
+      "value": 103020,
+      "weight": 3.6,
+      "pl": 6020,
+      "plPercent": 6.2
+    },
+    {
+      "ticker": "XLE",
+      "name": "Energy ETF",
+      "sector": "Energy",
+      "shares": 1000,
+      "avgCost": 51.00,
+      "currentPrice": 53.25,
+      "value": 53250,
+      "weight": 1.9,
+      "pl": 2250,
+      "plPercent": 4.4
+    },
+    {
+      "ticker": "XLP",
+      "name": "Staples ETF",
+      "sector": "Staples",
+      "shares": 1800,
+      "avgCost": 84.50,
+      "currentPrice": 87.94,
+      "value": 158292,
+      "weight": 5.6,
+      "pl": 6192,
+      "plPercent": 4.1
+    },
+    {
+      "ticker": "ITA",
+      "name": "Defense ETF",
+      "sector": "Defense",
+      "shares": 150,
+      "avgCost": 225.00,
+      "currentPrice": 233.93,
+      "value": 35090,
+      "weight": 1.2,
+      "pl": 1340,
+      "plPercent": 4.0
+    },
+    {
+      "ticker": "ROBO",
+      "name": "Robotics ETF",
+      "sector": "Industrials",
+      "shares": 500,
+      "avgCost": 72.00,
+      "currentPrice": 74.41,
+      "value": 37205,
+      "weight": 1.3,
+      "pl": 1205,
+      "plPercent": 3.3
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon",
+      "sector": "Tech",
+      "shares": 400,
+      "avgCost": 210.50,
+      "currentPrice": 222.60,
+      "value": 89040,
+      "weight": 3.1,
+      "pl": 4840,
+      "plPercent": 5.7
+    }
+  ],
+  "topContributors": {
+    "winners": [
+      { "ticker": "GOOGL", "pl": 29920, "plPercent": "13.1" },
+      { "ticker": "LLY", "pl": 27960, "plPercent": "28.2" },
+      { "ticker": "FCX", "pl": 22750, "plPercent": "11.2" },
+      { "ticker": "UNH", "pl": 20475, "plPercent": "12.9" },
+      { "ticker": "AVGO", "pl": 13320, "plPercent": "9.9" }
+    ],
+    "losers": [
+      { "ticker": "N/A", "pl": 0, "plPercent": "0" }
+    ]
+  },
+  "recentTransactions": [
+    {
+      "date": "2026-02-05",
+      "action": "BUY",
+      "ticker": "FCX",
+      "shares": 500,
+      "price": 64.20,
+      "value": 32100,
+      "rationale": "Aumentar exposure cobre, superciclo intacto"
+    },
+    {
+      "date": "2026-01-28",
+      "action": "SELL",
+      "ticker": "XLK",
+      "shares": 800,
+      "price": 146.50,
+      "value": 117200,
+      "rationale": "Rotación fuera de tech, rebalanceo hacia cíclicos"
+    },
+    {
+      "date": "2026-01-22",
+      "action": "BUY",
+      "ticker": "XLE",
+      "shares": 500,
+      "price": 52.80,
+      "value": 26400,
+      "rationale": "Energía barata relativa, WTI en rango bajo"
+    },
+    {
+      "date": "2026-01-15",
+      "action": "BUY",
+      "ticker": "UNH",
+      "shares": 150,
+      "price": 268.50,
+      "value": 40275,
+      "rationale": "Pullback en healthcare quality, oportunidad"
+    },
+    {
+      "date": "2026-01-10",
+      "action": "SELL",
+      "ticker": "NVDA",
+      "shares": 200,
+      "price": 582.00,
+      "value": 116400,
+      "rationale": "Take profit en AI rally, valuación estirada"
+    }
+  ]
+}
