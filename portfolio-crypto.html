@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Crypto - Hedge Fund Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">HF DASHBOARD</div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="macro.html">Macro</a></li>
+        <li><a href="riesgo.html">Riesgo</a></li>
+        <li><a href="sectores.html">Sectores</a></li>
+        <li><a href="stocks.html">Stocks</a></li>
+        <li><a href="commodities.html">Commodities</a></li>
+        <li><a href="forex.html">Forex</a></li>
+        <li><a href="crypto.html">Crypto</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    
+    <header>
+      <h1>PORTFOLIO CRYPTO</h1>
+      <span>Última actualización: 08 Feb 2026</span>
+    </header>
+
+    <section>
+      <div class="portfolio-summary">
+        <div class="summary-card total">
+          <h3>VALOR ACTUAL</h3>
+          <div class="summary-value">$352,500</div>
+          <div class="summary-note">9.9% del patrimonio (bajo límite 10%)</div>
+        </div>
+
+        <div class="summary-card perf">
+          <h3>P&L 12M</h3>
+          <div class="summary-value negative">-$104,200</div>
+          <div class="summary-note">-22.8% | Post-corrección desde 120k</div>
+        </div>
+
+        <div class="summary-card">
+          <h3>ALLOCATION</h3>
+          <div class="summary-value">60/25/15</div>
+          <div class="summary-note">BTC / ETH / Alts</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>POSICIONES</h2>
+      
+      <table class="simple-table">
+        <tr>
+          <td>₿ BTC</td>
+          <td>3.0 BTC</td>
+          <td>$211,740</td>
+          <td>60%</td>
+          <td class="negative">-27%</td>
+        </tr>
+        <tr>
+          <td>Ξ ETH</td>
+          <td>42.7 ETH</td>
+          <td>$88,090</td>
+          <td>25%</td>
+          <td class="negative">-25%</td>
+        </tr>
+        <tr>
+          <td>◎ SOL + Alts</td>
+          <td>Varios</td>
+          <td>$52,670</td>
+          <td>15%</td>
+          <td class="negative">-42%</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <div class="info-box warning">
+        <strong>ESTRATEGIA:</strong> Hold core BTC/ETH. NO agregar capital hasta señales 
+        de capitulación (BTC <$60k o MA200 - 1.5σ). Ver detalles en 
+        <a href="crypto.html">sección Crypto</a>.
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
