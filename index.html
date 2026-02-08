@@ -7,17 +7,35 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">HF DASHBOARD</div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="active">Dashboard</a></li>
+        <li><a href="macro.html">Macro</a></li>
+        <li><a href="riesgo.html">Riesgo</a></li>
+        <li><a href="#" class="disabled">Sectores</a></li>
+        <li><a href="#" class="disabled">Stocks</a></li>
+        <li><a href="#" class="disabled">Commodities</a></li>
+        <li><a href="#" class="disabled">Forex</a></li>
+        <li><a href="#" class="disabled">Crypto</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <div class="container">
     
     <!-- Header -->
     <header>
-      <h1>HEDGE FUND DASHBOARD</h1>
+      <h1>MARKET PULSE</h1>
       <span id="last-update">Cargando...</span>
     </header>
 
     <!-- Market Pulse -->
     <section class="market-pulse">
-      <h2>MARKET PULSE - RÉGIMEN ACTUAL</h2>
+      <h2>RÉGIMEN ACTUAL</h2>
       
       <div class="indicators">
         <div class="indicator regime" id="regime">
@@ -55,9 +73,7 @@
     <!-- Recommendations -->
     <section class="recommendations">
       <h2>RECOMENDACIONES ACTIVAS (Top 5)</h2>
-      <div id="recommendations-list">
-        <!-- JavaScript llenará esto -->
-      </div>
+      <div id="recommendations-list"></div>
     </section>
 
     <!-- Sector Rotation -->
@@ -103,6 +119,33 @@
             <span class="neutral">+2.8%</span>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="quick-links">
+      <h2>ACCESOS RÁPIDOS</h2>
+      <div class="links-grid">
+        <a href="macro.html" class="link-card">
+          <div class="link-icon">🌍</div>
+          <div class="link-title">Outlook Macro</div>
+          <div class="link-desc">US, China, EM</div>
+        </a>
+        <a href="riesgo.html" class="link-card">
+          <div class="link-icon">⚠️</div>
+          <div class="link-title">Risk Dashboard</div>
+          <div class="link-desc">VIX, Spreads, NFCI</div>
+        </a>
+        <a href="#" class="link-card disabled">
+          <div class="link-icon">📊</div>
+          <div class="link-title">Stock Picks</div>
+          <div class="link-desc">Próximamente</div>
+        </a>
+        <a href="#" class="link-card disabled">
+          <div class="link-icon">💱</div>
+          <div class="link-title">Forex Trades</div>
+          <div class="link-desc">Próximamente</div>
+        </a>
       </div>
     </section>
 

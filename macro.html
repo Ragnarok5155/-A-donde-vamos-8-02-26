@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Macro Outlook - Hedge Fund Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">HF DASHBOARD</div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="macro.html" class="active">Macro</a></li>
+        <li><a href="riesgo.html">Riesgo</a></li>
+        <li><a href="#" class="disabled">Sectores</a></li>
+        <li><a href="#" class="disabled">Stocks</a></li>
+        <li><a href="#" class="disabled">Commodities</a></li>
+        <li><a href="#" class="disabled">Forex</a></li>
+        <li><a href="#" class="disabled">Crypto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    
+    <header>
+      <h1>MACRO OUTLOOK</h1>
+      <span id="last-update">Cargando...</span>
+    </header>
+
+    <!-- Escenarios USA -->
+    <section>
+      <h2>ESCENARIOS ESTADOS UNIDOS 2026</h2>
+      
+      <div class="scenarios-grid" id="scenarios-us"></div>
+      
+      <div class="scenario-detail">
+        <h3>Probabilidades de Recesión</h3>
+        <div class="prob-bar">
+          <div class="prob-fill" style="width: 25%">
+            <span>20-25%</span>
+          </div>
+        </div>
+        <p class="prob-note">Escenario base: Soft landing (65-70% probabilidad)</p>
+      </div>
+    </section>
+
+    <!-- China -->
+    <section>
+      <h2>CHINA</h2>
+      
+      <div class="indicators">
+        <div class="indicator">
+          <div class="name">GDP 2025</div>
+          <div class="value">5.0%</div>
+          <div class="change">En línea con objetivo</div>
+        </div>
+        <div class="indicator">
+          <div class="name">CPI 2025</div>
+          <div class="value">0.0%</div>
+          <div class="change negative">Deflación persistente</div>
+        </div>
+        <div class="indicator">
+          <div class="name">M2 Growth</div>
+          <div class="value">8.5%</div>
+          <div class="change">Estímulo monetario</div>
+        </div>
+        <div class="indicator">
+          <div class="name">USDCNY</div>
+          <div class="value">6.93</div>
+          <div class="change">CNY apreciándose</div>
+        </div>
+      </div>
+
+      <div class="info-box warning">
+        <strong>⚠️ Riesgo Property:</strong> Inversión inmobiliaria -17% (2025). 
+        Problema estructural sin resolver, solo parcheo continuo.
+      </div>
+
+      <div class="info-box">
+        <strong>Outlook 2026:</strong> Crecimiento 4.5% (IMF), con composición hacia 
+        high-tech y servicios. Mercado trata a China como "credit story" semi-estructural.
+      </div>
+    </section>
+
+    <!-- Emergentes -->
+    <section>
+      <h2>EMERGENTES (ex-China)</h2>
+      
+      <div class="em-performance">
+        <h3>Performance 6M</h3>
+        <div class="sector-item">
+          <span>🇵🇪 Perú (EPU)</span>
+          <span class="positive">+81.2%</span>
+        </div>
+        <div class="sector-item">
+          <span>🇧🇷 Brasil (EWZ)</span>
+          <span class="positive">+41.6%</span>
+        </div>
+        <div class="sector-item">
+          <span>🇨🇴 Colombia (COLO)</span>
+          <span class="positive">+41.3%</span>
+        </div>
+        <div class="sector-item">
+          <span>🇲🇽 México (EWW)</span>
+          <span class="positive">+32.8%</span>
+        </div>
+        <div class="sector-item">
+          <span>EEM Broad</span>
+          <span class="positive">+23.9%</span>
+        </div>
+      </div>
+
+      <div class="info-box success">
+        <strong>✅ Drivers:</strong> DXY cayendo de 110 a 98 + M2 global expandiéndose + 
+        Spreads EM contenidos = Viento de cola para EM equity y FX
+      </div>
+    </section>
+
+  </div>
+
+  <script src="macro.js"></script>
+</body>
+</html>

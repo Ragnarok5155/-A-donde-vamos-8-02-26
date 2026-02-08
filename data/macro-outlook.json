@@ -1,0 +1,38 @@
+{
+  "lastUpdate": "2026-02-08",
+  "scenariosUS": [
+    {
+      "name": "BASE CASE",
+      "probability": "65-70%",
+      "type": "base",
+      "points": [
+        "Soft landing global",
+        "Inflación converge a 2.3-2.6%",
+        "Fed mantiene policy rate real+",
+        "Equities +5-8% real"
+      ]
+    },
+    {
+      "name": "RECESIÓN LEVE",
+      "probability": "20-25%",
+      "type": "recession",
+      "points": [
+        "1-2 trimestres PIB negativo",
+        "Desempleo >5%",
+        "HY OAS >4.5%",
+        "Equities -20-25%"
+      ]
+    },
+    {
+      "name": "REFLACIÓN",
+      "probability": "10-15%",
+      "type": "reflation",
+      "points": [
+        "IA/capex sorprenden al alza",
+        "PIB >3%, inflación >3%",
+        "Fed aborta recortes",
+        "Value/cíclicos outperform"
+      ]
+    }
+  ]
+}
