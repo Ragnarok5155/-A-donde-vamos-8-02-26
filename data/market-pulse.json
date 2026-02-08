@@ -1,0 +1,90 @@
+{
+  "lastUpdate": "2026-02-08",
+  "regime": {
+    "status": "neutral",
+    "color": "yellow",
+    "label": "NEUTRAL",
+    "description": "Complacencia moderada - Condiciones financieras laxas",
+    "action": "Mantener beta, preparar hedges para VIX >25"
+  },
+  "indicators": [
+    {
+      "name": "VIX",
+      "value": 17.77,
+      "change": "+10%",
+      "trend": "up"
+    },
+    {
+      "name": "HY OAS",
+      "value": 2.97,
+      "unit": "%",
+      "change": "-2bp",
+      "trend": "down"
+    },
+    {
+      "name": "DXY",
+      "value": 97.66,
+      "change": "-9%",
+      "trend": "down"
+    }
+  ],
+  "topRecommendations": [
+    {
+      "ticker": "XLE",
+      "name": "Energy",
+      "status": "buy",
+      "price": 53.25,
+      "entry": "53-54",
+      "target": 65,
+      "stop": 46,
+      "size": "7%",
+      "upside": "+22%",
+      "thesis": "Energía barata relativa, petróleo en rango 60-90 con sesgo alcista"
+    },
+    {
+      "ticker": "XLB",
+      "name": "Materials",
+      "status": "buy",
+      "price": 51.51,
+      "entry": "51-52",
+      "target": 62,
+      "stop": 45,
+      "size": "5%",
+      "upside": "+20%",
+      "thesis": "Cobre en superciclo, oferta limitada, demanda por electrificación"
+    },
+    {
+      "ticker": "ITA",
+      "name": "Aerospace & Defense",
+      "status": "buy",
+      "price": 233.93,
+      "entry": "230-235",
+      "target": 280,
+      "stop": 205,
+      "size": "5%",
+      "upside": "+20%",
+      "thesis": "Gasto militar estructuralmente alto, oligopolio con márgenes robustos"
+    },
+    {
+      "ticker": "EURUSD",
+      "name": "Forex Long",
+      "status": "hold",
+      "price": 1.18,
+      "entry": "1.17-1.18",
+      "target": 1.24,
+      "stop": 1.14,
+      "size": "1.5% equity",
+      "thesis": "Fed recortando más rápido que BCE, DXY <100"
+    },
+    {
+      "ticker": "BTC",
+      "name": "BTC Core",
+      "status": "buy",
+      "price": 70580,
+      "entry": "60-75k",
+      "stop": "45k",
+      "size": "6%",
+      "thesis": "Post-corrección desde 120k, average cost ETFs ~65k"
+    }
+  ]
+}

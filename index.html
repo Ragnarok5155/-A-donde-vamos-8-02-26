@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hedge Fund Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Header -->
+    <header>
+      <h1>HEDGE FUND DASHBOARD</h1>
+      <span id="last-update">Cargando...</span>
+    </header>
+
+    <!-- Market Pulse -->
+    <section class="market-pulse">
+      <h2>MARKET PULSE - RÉGIMEN ACTUAL</h2>
+      
+      <div class="indicators">
+        <div class="indicator regime" id="regime">
+          <div class="emoji">🟡</div>
+          <div class="label">NEUTRAL</div>
+        </div>
+        
+        <div class="indicator">
+          <div class="name">VIX</div>
+          <div class="value" id="vix-value">--</div>
+          <div class="change" id="vix-change">--</div>
+        </div>
+
+        <div class="indicator">
+          <div class="name">HY OAS</div>
+          <div class="value" id="hy-value">--</div>
+          <div class="change" id="hy-change">--</div>
+        </div>
+
+        <div class="indicator">
+          <div class="name">DXY</div>
+          <div class="value" id="dxy-value">--</div>
+          <div class="change" id="dxy-change">--</div>
+        </div>
+      </div>
+
+      <div class="regime-info">
+        <strong>RÉGIMEN:</strong> <span id="regime-desc">--</span>
+      </div>
+      <div class="action-info">
+        <strong>ACCIÓN:</strong> <span id="regime-action">--</span>
+      </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section class="recommendations">
+      <h2>RECOMENDACIONES ACTIVAS (Top 5)</h2>
+      <div id="recommendations-list">
+        <!-- JavaScript llenará esto -->
+      </div>
+    </section>
+
+    <!-- Sector Rotation -->
+    <section class="sectors">
+      <h2>ROTACIÓN SECTORIAL - ÚLTIMA 3M</h2>
+      <div class="sectors-grid">
+        <div class="outperformers">
+          <h3>OUTPERFORMERS</h3>
+          <div class="sector-item">
+            <span>XLB Materials</span>
+            <span class="positive">+20.0%</span>
+          </div>
+          <div class="sector-item">
+            <span>XLE Energy</span>
+            <span class="positive">+18.9%</span>
+          </div>
+          <div class="sector-item">
+            <span>XLP Staples</span>
+            <span class="positive">+14.7%</span>
+          </div>
+          <div class="sector-item">
+            <span>XLI Industrials</span>
+            <span class="positive">+12.9%</span>
+          </div>
+          <div class="sector-item">
+            <span>ITA Defense</span>
+            <span class="positive">+11.9%</span>
+          </div>
+        </div>
+
+        <div class="underperformers">
+          <h3>UNDERPERFORMERS</h3>
+          <div class="sector-item">
+            <span>BUG Cybersec</span>
+            <span class="negative">-19.2%</span>
+          </div>
+          <div class="sector-item">
+            <span>XLU Utilities</span>
+            <span class="negative">-3.3%</span>
+          </div>
+          <div class="sector-item">
+            <span>XLF Financials</span>
+            <span class="neutral">+2.8%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
