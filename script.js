@@ -64,3 +64,39 @@ fetch('data/market-pulse.json')
     });
   })
   .catch(error => console.error('Error cargando datos:', error));
+
+// Cargar gráfico VIX
+fetch('data/historical-vix.json')
+  .then(response => response.json())
+  .then(data => {
+    ChartBuilder.createAreaChart('vix-chart', {
+      labels: data.dates,
+      datasets: [{
+        label: 'VIX',
+        data: data.values,
+        borderColor: '#ef4444',
+        backgroundColor: 'rgba(239, 68, 68, 0.1)',
+        tension: 0.4,
+        pointRadius: 0,
+        borderWidth: 2
+      }]
+    }, {
+      plugins: {
+        legend: { display: false }
+      },
+      scales: {
+        y: {
+          grid: { color: '#374151' },
+          ticks: { color: '#9ca3af' },
+          beginAtZero: false
+        },
+        x: {
+          grid: { display: false },
+          ticks: { 
+            color: '#9ca3af',
+            maxTicksLimit: 8
+          }
+        }
+      }
+    });
+  });
