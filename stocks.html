@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Picking - Hedge Fund Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">HF DASHBOARD</div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="macro.html">Macro</a></li>
+        <li><a href="riesgo.html">Riesgo</a></li>
+        <li><a href="sectores.html">Sectores</a></li>
+        <li><a href="stocks.html" class="active">Stocks</a></li>
+        <li><a href="#" class="disabled">Commodities</a></li>
+        <li><a href="#" class="disabled">Forex</a></li>
+        <li><a href="#" class="disabled">Crypto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    
+    <header>
+      <h1>STOCK PICKING</h1>
+      <span id="last-update">Cargando...</span>
+    </header>
+
+    <!-- Metodología -->
+    <section>
+      <div class="methodology-banner">
+        <h2>📐 METODOLOGÍA</h2>
+        <div class="method-grid">
+          <div class="method-item">
+            <div class="method-icon">📈</div>
+            <div class="method-text">
+              <strong>Growth</strong><br>
+              Revenue/EPS 3-5 años >15%
+            </div>
+          </div>
+          <div class="method-item">
+            <div class="method-icon">💎</div>
+            <div class="method-text">
+              <strong>Quality</strong><br>
+              ROE/ROIC > WACC consistente
+            </div>
+          </div>
+          <div class="method-item">
+            <div class="method-icon">🛡️</div>
+            <div class="method-text">
+              <strong>Moat</strong><br>
+              Ventajas competitivas defendibles
+            </div>
+          </div>
+          <div class="method-item">
+            <div class="method-icon">💰</div>
+            <div class="method-text">
+              <strong>Valuation</strong><br>
+              P/E, EV/EBITDA razonables vs calidad
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filtros -->
+    <section>
+      <h2>🔍 FILTRAR STOCKS</h2>
+      
+      <div class="filters-grid">
+        <div class="filter-group">
+          <label>Sector</label>
+          <select id="filter-sector">
+            <option value="">Todos</option>
+            <option value="Defense">Defense</option>
+            <option value="Energy">Energy</option>
+            <option value="Materials">Materials</option>
+            <option value="Industrials">Industrials</option>
+            <option value="Healthcare">Healthcare</option>
+            <option value="Tech">Tech</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label>Upside Mínimo</label>
+          <select id="filter-upside">
+            <option value="0">Todos</option>
+            <option value="10">+10%</option>
+            <option value="20">+20%</option>
+            <option value="30">+30%</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label>Market Cap</label>
+          <select id="filter-mcap">
+            <option value="">Todos</option>
+            <option value="large">Large (>50B)</option>
+            <option value="mid">Mid (10-50B)</option>
+            <option value="small">Small (<10B)</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label>Buscar</label>
+          <input type="text" id="filter-search" placeholder="Ticker o nombre...">
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabla de Stocks -->
+    <section>
+      <h2>📋 UNIVERSO DE STOCKS (15 seleccionados)</h2>
+      
+      <div class="table-wrapper">
+        <table class="stocks-table">
+          <thead>
+            <tr>
+              <th>Ticker</th>
+              <th>Empresa</th>
+              <th>Sector</th>
+              <th>Precio</th>
+              <th>Target 12M</th>
+              <th>Upside %</th>
+              <th>P/E</th>
+              <th>ROE %</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          <tbody id="stocks-tbody">
+            <!-- JavaScript llenará esto -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Top 10 Picks -->
+    <section>
+      <h2>⭐ TOP 10 PICKS (Peso sugerido en portfolio)</h2>
+      
+      <div class="top-picks-grid" id="top-picks">
+        <!-- JavaScript llenará esto -->
+      </div>
+
+      <div class="info-box">
+        <strong>NOTA:</strong> Los pesos son sugeridos para un portfolio 100% equity. 
+        Ajustá según tu allocation total y tolerancia al riesgo.
+      </div>
+    </section>
+
+  </div>
+
+  <script src="stocks.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+{
+  "lastUpdate": "2026-02-08",
+  "sectors": [
+    {
+      "name": "Materials",
+      "ticker": "XLB",
+      "price": 51.51,
+      "performance": {
+        "1m": 10.1,
+        "3m": 20.0,
+        "6m": 20.0,
+        "12m": 25.0
+      },
+      "rsi": 68,
+      "recommendation": "Comprar"
+    },
+    {
+      "name": "Energy",
+      "ticker": "XLE",
+      "price": 53.25,
+      "performance": {
+        "1m": 11.5,
+        "3m": 18.9,
+        "6m": 18.9,
+        "12m": 22.0
+      },
+      "rsi": 65,
+      "recommendation": "Comprar"
+    },
+    {
+      "name": "Staples",
+      "ticker": "XLP",
+      "price": 87.94,
+      "performance": {
+        "1m": 5.3,
+        "3m": 14.7,
+        "6m": 14.6,
+        "12m": 16.0
+      },
+      "rsi": 58,
+      "recommendation": "Hold"
+    },
+    {
+      "name": "Industrials",
+      "ticker": "XLI",
+      "price": 173.18,
+      "performance": {
+        "1m": 9.2,
+        "3m": 12.9,
+        "6m": 12.9,
+        "12m": 18.5
+      },
+      "rsi": 62,
+      "recommendation": "Comprar"
+    },
+    {
+      "name": "Defense",
+      "ticker": "ITA",
+      "price": 233.93,
+      "performance": {
+        "1m": 8.5,
+        "3m": 11.9,
+        "6m": 11.9,
+        "12m": 20.0
+      },
+      "rsi": 60,
+      "recommendation": "Comprar"
+    },
+    {
+      "name": "Robotics",
+      "ticker": "ROBO",
+      "price": 74.41,
+      "performance": {
+        "1m": 5.2,
+        "3m": 9.3,
+        "6m": 9.3,
+        "12m": 15.0
+      },
+      "rsi": 55,
+      "recommendation": "Comprar"
+    },
+    {
+      "name": "Healthcare",
+      "ticker": "XLV",
+      "price": 157.71,
+      "performance": {
+        "1m": 1.6,
+        "3m": 7.9,
+        "6m": 7.9,
+        "12m": 12.0
+      },
+      "rsi": 52,
+      "recommendation": "Hold"
+    },
+    {
+      "name": "Financials",
+      "ticker": "XLF",
+      "price": 54.26,
+      "performance": {
+        "1m": -3.2,
+        "3m": 2.8,
+        "6m": 2.8,
+        "12m": 8.0
+      },
+      "rsi": 48,
+      "recommendation": "Hold"
+    },
+    {
+      "name": "Technology",
+      "ticker": "XLK",
+      "price": 146.53,
+      "performance": {
+        "1m": 1.3,
+        "3m": 3.5,
+        "6m": 8.0,
+        "12m": 28.0
+      },
+      "rsi": 50,
+      "recommendation": "Hold"
+    },
+    {
+      "name": "Utilities",
+      "ticker": "XLU",
+      "price": 43.35,
+      "performance": {
+        "1m": -0.2,
+        "3m": -3.3,
+        "6m": -3.3,
+        "12m": -2.0
+      },
+      "rsi": 38,
+      "recommendation": "Evitar"
+    },
+    {
+      "name": "Cybersecurity",
+      "ticker": "BUG",
+      "price": 26.94,
+      "performance": {
+        "1m": -8.0,
+        "3m": -19.2,
+        "6m": -19.2,
+        "12m": -25.0
+      },
+      "rsi": 28,
+      "recommendation": "Evitar"
+    }
+  ]
+}
