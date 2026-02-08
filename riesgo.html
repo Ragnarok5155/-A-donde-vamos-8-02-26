@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Risk Dashboard - Hedge Fund Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">HF DASHBOARD</div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="macro.html">Macro</a></li>
+        <li><a href="riesgo.html" class="active">Riesgo</a></li>
+        <li><a href="#" class="disabled">Sectores</a></li>
+        <li><a href="#" class="disabled">Stocks</a></li>
+        <li><a href="#" class="disabled">Commodities</a></li>
+        <li><a href="#" class="disabled">Forex</a></li>
+        <li><a href="#" class="disabled">Crypto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    
+    <header>
+      <h1>RISK DASHBOARD</h1>
+      <span id="last-update">Cargando...</span>
+    </header>
+
+    <!-- Resumen del Régimen -->
+    <section class="risk-summary">
+      <div class="risk-level" id="risk-level">
+        <div class="risk-emoji">⚠️</div>
+        <div class="risk-label">COMPLACENCIA MODERADA</div>
+        <div class="risk-desc">VIX bajo + HY spreads comprimidos = Mercado asume estabilidad</div>
+      </div>
+    </section>
+
+    <!-- Volatilidad -->
+    <section>
+      <h2>📊 VOLATILIDAD</h2>
+      
+      <div class="gauges-grid">
+        <div class="gauge-container">
+          <h3>VIX (Equity Vol)</h3>
+          <div class="gauge" id="gauge-vix">
+            <div class="gauge-fill" style="width: 35%"></div>
+            <div class="gauge-value">17.77</div>
+          </div>
+          <div class="gauge-zones">
+            <span class="zone-label"><15 Complacencia</span>
+            <span class="zone-label">15-25 Normal</span>
+            <span class="zone-label">>25 Stress</span>
+          </div>
+        </div>
+
+        <div class="gauge-container">
+          <h3>MOVE (Bond Vol)</h3>
+          <div class="gauge" id="gauge-move">
+            <div class="gauge-fill" style="width: 32%"></div>
+            <div class="gauge-value">63.61</div>
+          </div>
+          <div class="gauge-zones">
+            <span class="zone-label"><70 Bajo</span>
+            <span class="zone-label">70-100 Normal</span>
+            <span class="zone-label">>120 Crisis</span>
+          </div>
+        </div>
+
+        <div class="gauge-container">
+          <h3>SKEW (Tail Risk)</h3>
+          <div class="gauge" id="gauge-skew">
+            <div class="gauge-fill" style="width: 70%"></div>
+            <div class="gauge-value">140.31</div>
+          </div>
+          <div class="gauge-zones">
+            <span class="zone-label"><130 Sin prima</span>
+            <span class="zone-label">130-160 Moderada</span>
+            <span class="zone-label">>160 Alta</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <strong>INTERPRETACIÓN:</strong> VIX y MOVE en zona de complacencia. 
+        SKEW >140 indica que el mercado reconoce riesgo de cola, pero con VIX bajo 
+        la cobertura es barata. NO sobre-apalancar beta aquí.
+      </div>
+    </section>
+
+    <!-- Crédito -->
+    <section>
+      <h2>💳 CRÉDITO</h2>
+      
+      <div class="credit-grid">
+        <div class="credit-card">
+          <div class="credit-header">
+            <h3>HY Spreads (OAS)</h3>
+            <div class="credit-value">2.97<span class="unit">%</span></div>
+          </div>
+          <div class="credit-bar">
+            <div class="credit-fill safe" style="width: 30%"></div>
+          </div>
+          <div class="credit-labels">
+            <span>0%</span>
+            <span class="marker">↑ Actual (2.97%)</span>
+            <span>10%</span>
+          </div>
+          <div class="credit-note">
+            <strong>Zona:</strong> Complacencia extrema<br>
+            <strong>Recesiones típicas:</strong> >6%
+          </div>
+        </div>
+
+        <div class="credit-card">
+          <div class="credit-header">
+            <h3>HYG Precio</h3>
+            <div class="credit-value">$80.81</div>
+          </div>
+          <div class="credit-chart">
+            <div class="mini-chart">
+              <div class="chart-bar" style="height: 60%"></div>
+              <div class="chart-bar" style="height: 75%"></div>
+              <div class="chart-bar" style="height: 85%"></div>
+              <div class="chart-bar" style="height: 95%"></div>
+              <div class="chart-bar current" style="height: 100%"></div>
+            </div>
+          </div>
+          <div class="credit-note">
+            Cerca de máximos - Alta demanda por carry
+          </div>
+        </div>
+      </div>
+
+      <div class="info-box warning">
+        <strong>⚠️ SEÑAL DE ALERTA:</strong> Spreads <3% con VIX <20 = 
+        Configuración clásica de final de ciclo. El mercado NO está priceando recesión.
+      </div>
+    </section>
+
+    <!-- Condiciones Financieras -->
+    <section>
+      <h2>🏦 CONDICIONES FINANCIERAS</h2>
+      
+      <div class="nfci-grid">
+        <div class="nfci-card">
+          <h3>NFCI (Chicago Fed)</h3>
+          <div class="nfci-value negative">-0.50</div>
+          <div class="nfci-bar">
+            <div class="nfci-marker" style="left: 25%"></div>
+            <div class="nfci-zero"></div>
+          </div>
+          <div class="nfci-scale">
+            <span>-1.0 (Muy laxas)</span>
+            <span>0 (Neutral)</span>
+            <span>+1.0 (Estrictas)</span>
+          </div>
+        </div>
+
+        <div class="nfci-interpretation">
+          <h4>¿Qué significa NFCI = -0.50?</h4>
+          <ul>
+            <li>✅ Condiciones <strong>hiper-laxas</strong></li>
+            <li>✅ Crédito fluye sin fricción</li>
+            <li>⚠️ Próximo movimiento será hacia condiciones más estrictas</li>
+            <li>⚠️ NO esperar más relajación desde aquí</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <strong>HISTÓRICO:</strong> NFCI >0.3 = Crisis (2008, 2020). 
+        NFCI <-0.5 = Burbujas en formación. Actual = Zona de complacencia máxima.
+      </div>
+    </section>
+
+    <!-- Indicadores de Recesión -->
+    <section>
+      <h2>📉 INDICADORES DE RECESIÓN</h2>
+      
+      <div class="recession-indicators">
+        <div class="rec-indicator">
+          <div class="rec-name">Sahm Rule</div>
+          <div class="rec-status safe">
+            <div class="rec-dot green"></div>
+            <span>No activada</span>
+          </div>
+          <div class="rec-detail">
+            Cruzó 0.5 brevemente en 2025, luego retrocedió. 
+            Sin señal de recesión inmediata.
+          </div>
+        </div>
+
+        <div class="rec-indicator">
+          <div class="rec-name">Curva 10Y-3M</div>
+          <div class="rec-status warning">
+            <div class="rec-dot yellow"></div>
+            <span>Normalizándose</span>
+          </div>
+          <div class="rec-detail">
+            Salió de inversión brutal 2022-24. Históricamente precede recesiones, 
+            pero es mal market timer (equity sube mientras está invertida).
+          </div>
+        </div>
+
+        <div class="rec-indicator">
+          <div class="rec-name">US Leading Index</div>
+          <div class="rec-status warning">
+            <div class="rec-dot yellow"></div>
+            <span>Bajando</span>
+          </div>
+          <div class="rec-detail">
+            En descenso pero sin caída libre. Consistente con desaceleración, 
+            no colapso.
+          </div>
+        </div>
+      </div>
+
+      <div class="recession-probability">
+        <h3>Probabilidad de Recesión 2026-27</h3>
+        <div class="prob-bar-large">
+          <div class="prob-fill-large" style="width: 22.5%">
+            <span>20-25%</span>
+          </div>
+        </div>
+        <p>El mercado pricea <10%, nosotros vemos 20-25%</p>
+      </div>
+    </section>
+
+    <!-- Conclusión -->
+    <section class="risk-conclusion">
+      <h2>⚡ SÍNTESIS SIN ANESTESIA</h2>
+      
+      <div class="conclusion-grid">
+        <div class="conclusion-card safe">
+          <h3>✅ Riesgo Sistémico Inmediato</h3>
+          <p><strong>BAJO</strong> - No hay señales de crisis tipo 2008/2020 en el horizonte inmediato</p>
+        </div>
+
+        <div class="conclusion-card danger">
+          <h3>⚠️ Riesgo de Repricing 3-12M</h3>
+          <p><strong>ALTO</strong> - Comprando equity/crédito con VIX 17, HY OAS 3%, NFCI -0.5. 
+          Asimetría brutal si algo rompe.</p>
+        </div>
+
+        <div class="conclusion-card warning">
+          <h3>📋 Acción Recomendada</h3>
+          <ul>
+            <li>NO sobre-apalancar beta direccional</li>
+            <li>Financiar longs de calidad con shorts en complacencia</li>
+            <li>Preparar compras para VIX >30 + HY OAS >6%</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="riesgo.js"></script>
+</body>
+</html>

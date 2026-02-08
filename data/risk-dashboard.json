@@ -1,0 +1,59 @@
+{
+  "lastUpdate": "2026-02-08",
+  "overallRisk": {
+    "level": "moderate",
+    "label": "COMPLACENCIA MODERADA",
+    "description": "VIX bajo + HY spreads comprimidos = Mercado asume estabilidad"
+  },
+  "volatility": {
+    "vix": {
+      "value": 17.77,
+      "max": 50,
+      "zones": {
+        "safe": 15,
+        "warning": 25,
+        "danger": 35
+      }
+    },
+    "move": {
+      "value": 63.61,
+      "max": 200,
+      "zones": {
+        "safe": 70,
+        "warning": 100,
+        "danger": 120
+      }
+    },
+    "skew": {
+      "value": 140.31,
+      "max": 200,
+      "zones": {
+        "safe": 130,
+        "warning": 160,
+        "danger": 180
+      }
+    }
+  },
+  "credit": {
+    "hyOAS": 2.97,
+    "hygPrice": 80.81,
+    "nfci": -0.50
+  },
+  "recession": {
+    "sahmRule": {
+      "status": "safe",
+      "value": 0.3,
+      "threshold": 0.5
+    },
+    "yieldCurve": {
+      "status": "warning",
+      "value": 0.15,
+      "note": "Saliendo de inversión"
+    },
+    "leadingIndex": {
+      "status": "warning",
+      "trend": "declining"
+    },
+    "probabilityPercent": 22.5
+  }
+}
