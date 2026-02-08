@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Stocks - Hedge Fund Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">HF DASHBOARD</div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="macro.html">Macro</a></li>
+        <li><a href="riesgo.html">Riesgo</a></li>
+        <li><a href="sectores.html">Sectores</a></li>
+        <li><a href="stocks.html">Stocks</a></li>
+        <li><a href="commodities.html">Commodities</a></li>
+        <li><a href="forex.html">Forex</a></li>
+        <li><a href="crypto.html">Crypto</a></li>
+        <li><a href="portfolio-stocks.html" class="active">Portfolio</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    
+    <header>
+      <h1>PORTFOLIO EQUITY</h1>
+      <span id="last-update">Cargando...</span>
+    </header>
+
+    <!-- Performance Summary -->
+    <section>
+      <div class="portfolio-summary">
+        <div class="summary-card total">
+          <h3>VALOR TOTAL</h3>
+          <div class="summary-value">$2,840,500</div>
+          <div class="summary-note">100% Equity | Long-only</div>
+        </div>
+
+        <div class="summary-card perf">
+          <h3>PERFORMANCE YTD</h3>
+          <div class="summary-value positive" id="perf-ytd">+8.4%</div>
+          <div class="summary-note">vs SPY: +6.2% (α: +2.2%)</div>
+        </div>
+
+        <div class="summary-card perf">
+          <h3>PERFORMANCE 12M</h3>
+          <div class="summary-value positive" id="perf-12m">+22.7%</div>
+          <div class="summary-note">vs SPY: +18.3% (α: +4.4%)</div>
+        </div>
+
+        <div class="summary-card risk">
+          <h3>VOLATILIDAD</h3>
+          <div class="summary-value">14.2%</div>
+          <div class="summary-note">vs SPY: 13.8% (ligeramente más volátil)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sector Allocation -->
+    <section>
+      <h2>📊 ALLOCATION POR SECTOR</h2>
+      
+      <div class="allocation-viz">
+        <div class="alloc-bar-container" id="sector-allocation">
+          <!-- JavaScript generará esto -->
+        </div>
+        
+        <div class="alloc-legend" id="sector-legend">
+          <!-- JavaScript -->
+        </div>
+      </div>
+
+      <div class="info-box">
+        <strong>SESGO ACTUAL:</strong> Overweight cíclicos/materials (32%) + defense (10%). 
+        Underweight tech puro (12% vs 30% SPY). Estrategia de rotación sectorial activa.
+      </div>
+    </section>
+
+    <!-- Holdings Table -->
+    <section>
+      <h2>📋 POSICIONES ACTUALES (20 holdings)</h2>
+      
+      <div class="portfolio-controls">
+        <div class="controls-left">
+          <button class="btn-filter active" data-filter="all">Todas</button>
+          <button class="btn-filter" data-filter="winners">Ganadoras</button>
+          <button class="btn-filter" data-filter="losers">Perdedoras</button>
+        </div>
+        <div class="controls-right">
+          <input type="text" id="holdings-search" placeholder="🔍 Buscar ticker..." />
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="portfolio-table">
+          <thead>
+            <tr>
+              <th>Ticker</th>
+              <th>Empresa</th>
+              <th>Sector</th>
+              <th class="right">Shares</th>
+              <th class="right">Avg Cost</th>
+              <th class="right">Precio Actual</th>
+              <th class="right">Valor</th>
+              <th class="right">Peso %</th>
+              <th class="right">P&L</th>
+              <th class="right">P&L %</th>
+            </tr>
+          </thead>
+          <tbody id="holdings-tbody">
+            <!-- JavaScript -->
+          </tbody>
+          <tfoot>
+            <tr class="total-row">
+              <td colspan="6"><strong>TOTAL</strong></td>
+              <td class="right"><strong id="total-value">$2,840,500</strong></td>
+              <td class="right"><strong>100.0%</strong></td>
+              <td class="right positive"><strong id="total-pl">+$425,300</strong></td>
+              <td class="right positive"><strong id="total-pl-pct">+17.6%</strong></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+
+    <!-- Top/Bottom Contributors -->
+    <section>
+      <h2>🏆 TOP & BOTTOM CONTRIBUTORS (12M)</h2>
+      
+      <div class="contributors-grid">
+        <div class="contrib-section winners">
+          <h3>🟢 TOP 5 WINNERS</h3>
+          <div id="top-winners"></div>
+        </div>
+
+        <div class="contrib-section losers">
+          <h3>🔴 TOP 5 LOSERS</h3>
+          <div id="top-losers"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Risk Metrics -->
+    <section>
+      <h2>⚖️ MÉTRICAS DE RIESGO</h2>
+      
+      <div class="risk-metrics-grid">
+        <div class="metric-card">
+          <h4>Sharpe Ratio (12M)</h4>
+          <div class="metric-value">1.38</div>
+          <p>Retorno ajustado por riesgo superior a mercado (SPY: 1.20)</p>
+        </div>
+
+        <div class="metric-card">
+          <h4>Max Drawdown (12M)</h4>
+          <div class="metric-value negative">-8.2%</div>
+          <p>vs SPY: -10.5%. Menor volatilidad en correcciones.</p>
+        </div>
+
+        <div class="metric-card">
+          <h4>Beta vs SPY</h4>
+          <div class="metric-value">0.92</div>
+          <p>Portfolio ligeramente defensivo vs mercado broad.</p>
+        </div>
+
+        <div class="metric-card">
+          <h4>Concentración (Top 5)</h4>
+          <div class="metric-value warning">35.8%</div>
+          <p>Diversificado, sin riesgo extremo de single name.</p>
+        </div>
+
+        <div class="metric-card">
+          <h4>Turnover (12M)</h4>
+          <div class="metric-value">42%</div>
+          <p>Activo pero no day-trader. ~8-10 trades/año.</p>
+        </div>
+
+        <div class="metric-card">
+          <h4>Win Rate</h4>
+          <div class="metric-value positive">65%</div>
+          <p>De 20 posiciones: 13 ganadoras, 5 perdedoras, 2 flat.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Próximos Movimientos -->
+    <section class="action-box">
+      <h2>🎯 PRÓXIMOS MOVIMIENTOS</h2>
+      
+      <div class="next-moves-grid">
+        <div class="move-card buy">
+          <h3>🟢 EN EL RADAR (Comprar)</h3>
+          <ul>
+            <li><strong>Aumentar XLB/XLE:</strong> Si cobre >$6.00 o WTI <$60</li>
+            <li><strong>Entry en FCX:</strong> Esperando pullback a $58-60</li>
+            <li><strong>Agregar ROBO:</strong> Si rompe $78 con volumen</li>
+          </ul>
+        </div>
+
+        <div class="move-card hold">
+          <h3>🟡 HOLD (Mantener)</h3>
+          <ul>
+            <li>Core positions (UNH, GOOGL, AVGO)</li>
+            <li>Defense (LMT, RTX) - hasta señal macro</li>
+            <li>Materials (LIN) - calidad secular</li>
+          </ul>
+        </div>
+
+        <div class="move-card sell">
+          <h3>🔴 BAJO REVISIÓN (Posible salida)</h3>
+          <ul>
+            <li><strong>LLY:</strong> Valuación extrema, proteger ganancias si >$1,100</li>
+            <li><strong>GE:</strong> Rally agotado, PE 38x sin catalizador</li>
+            <li><strong>Recortar GOOGL:</strong> Si quiebra bajo $300 (stop técnico)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transactions Log -->
+    <section>
+      <h2>📝 ÚLTIMAS TRANSACCIONES (90 días)</h2>
+      
+      <div class="table-wrapper">
+        <table class="transactions-table">
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>Acción</th>
+              <th>Ticker</th>
+              <th class="right">Shares</th>
+              <th class="right">Precio</th>
+              <th class="right">Valor</th>
+              <th>Rationale</th>
+            </tr>
+          </thead>
+          <tbody id="transactions-tbody">
+            <!-- JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="portfolio-stocks.js"></script>
+</body>
+</html>
