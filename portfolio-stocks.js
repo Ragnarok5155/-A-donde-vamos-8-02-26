@@ -176,4 +176,67 @@ function setupFilters() {
       row.style.display = ticker.includes(search) ? '' : 'none';
     });
   });
+
+  // Cargar gráfico de performance
+fetch('data/portfolio-performance.json')
+  .then(response => response.json())
+  .then(data => {
+    ChartBuilder.createLineChart('portfolio-performance-chart', {
+      labels: data.dates,
+      datasets: [
+        {
+          label: 'Mi Portfolio',
+          data: data.portfolio,
+          borderColor: '#3b82f6',
+          backgroundColor: 'rgba(59, 130, 246, 0.1)',
+          tension: 0.4,
+          fill: true,
+          borderWidth: 3
+        },
+        {
+          label: 'S&P 500',
+          data: data.spy,
+          borderColor: '#9ca3af',
+          backgroundColor: 'transparent',
+          tension: 0.4,
+          borderWidth: 2,
+          borderDash: [5, 5]
+        }
+      ]
+    }, {
+      plugins: {
+        legend: {
+          display: true,
+          position: 'top'
+        },
+        tooltip: {
+          mode: 'index',
+          intersect: false,
+          callbacks: {
+            label: function(context) {
+              return context.dataset.label + ': +' + context.parsed.y.toFixed(1) + '%';
+            }
+          }
+        }
+      },
+      scales: {
+        y: {
+          grid: { color: '#374151' },
+          ticks: { 
+            color: '#9ca3af',
+            callback: function(value) {
+              return '+' + value + '%';
+            }
+          }
+        },
+        x: {
+          grid: { display: false },
+          ticks: { 
+            color: '#9ca3af',
+            maxTicksLimit: 10
+          }
+        }
+      }
+    });
+  });
 }
