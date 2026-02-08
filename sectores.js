@@ -121,4 +121,64 @@ function setupEventListeners() {
   document.getElementById('sort-by').addEventListener('change', (e) => {
     renderTable(e.target.value);
   });
+
+  // Gráfico de performance sectorial
+fetch('data/sectors-performance.json')
+  .then(response => response.json())
+  .then(data => {
+    ChartBuilder.createLineChart('sectors-performance-chart', {
+      labels: data.dates,
+      datasets: [
+        {
+          label: 'XLB (Materials)',
+          data: data.xlb,
+          borderColor: '#f59e0b',
+          backgroundColor: 'transparent',
+          tension: 0.4,
+          borderWidth: 3
+        },
+        {
+          label: 'XLE (Energy)',
+          data: data.xle,
+          borderColor: '#ef4444',
+          backgroundColor: 'transparent',
+          tension: 0.4,
+          borderWidth: 3
+        },
+        {
+          label: 'XLP (Staples)',
+          data: data.xlp,
+          borderColor: '#10b981',
+          backgroundColor: 'transparent',
+          tension: 0.4,
+          borderWidth: 3
+        }
+      ]
+    }, {
+      plugins: {
+        legend: {
+          display: true,
+          position: 'top'
+        }
+      },
+      scales: {
+        y: {
+          grid: { color: '#374151' },
+          ticks: { 
+            color: '#9ca3af',
+            callback: function(value) {
+              return value + '%';
+            }
+          }
+        },
+        x: {
+          grid: { display: false },
+          ticks: { 
+            color: '#9ca3af',
+            maxTicksLimit: 6
+          }
+        }
+      }
+    });
+  });
 }
