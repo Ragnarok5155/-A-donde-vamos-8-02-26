@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Consolidado - Hedge Fund Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">HF DASHBOARD</div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="macro.html">Macro</a></li>
+        <li><a href="riesgo.html">Riesgo</a></li>
+        <li><a href="sectores.html">Sectores</a></li>
+        <li><a href="stocks.html">Stocks</a></li>
+        <li><a href="commodities.html">Commodities</a></li>
+        <li><a href="forex.html">Forex</a></li>
+        <li><a href="crypto.html">Crypto</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    
+    <header>
+      <h1>PORTFOLIO CONSOLIDADO</h1>
+      <span id="last-update">Última actualización: 08 Feb 2026</span>
+    </header>
+
+    <!-- Total Performance -->
+    <section>
+      <div class="consolidated-summary">
+        <div class="consol-main">
+          <h2>PATRIMONIO LÍQUIDO TOTAL</h2>
+          <div class="consol-value">$3,547,800</div>
+          <div class="consol-perf positive">+$638,200 (+21.9%) 12M</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Asset Allocation -->
+    <section>
+      <h2>📊 ASSET ALLOCATION</h2>
+      
+      <div class="asset-alloc-viz">
+        <div class="asset-pie">
+          <div class="pie-chart">
+            <!-- Esto sería mejor con un gráfico real, pero por ahora tabla -->
+            <div class="pie-segment equity" style="--value: 80"></div>
+            <div class="pie-segment forex" style="--value: 10"></div>
+            <div class="pie-segment crypto" style="--value: 10"></div>
+          </div>
+          <div class="pie-center">
+            <div class="pie-total">$3.55M</div>
+          </div>
+        </div>
+
+        <div class="asset-breakdown">
+          <div class="asset-item equity">
+            <div class="asset-color"></div>
+            <div class="asset-info">
+              <h3>Equity (Stocks + Commodities)</h3>
+              <div class="asset-value">$2,840,500</div>
+              <div class="asset-percent">80.1%</div>
+              <div class="asset-perf positive">+22.7% (12M)</div>
+            </div>
+            <a href="portfolio-stocks.html" class="asset-link">Ver detalle →</a>
+          </div>
+
+          <div class="asset-item forex">
+            <div class="asset-color"></div>
+            <div class="asset-info">
+              <h3>Forex</h3>
+              <div class="asset-value">$354,800</div>
+              <div class="asset-percent">10.0%</div>
+              <div class="asset-perf positive">+18.4% (12M)</div>
+            </div>
+            <a href="portfolio-forex.html" class="asset-link">Ver detalle →</a>
+          </div>
+
+          <div class="asset-item crypto">
+            <div class="asset-color"></div>
+            <div class="asset-info">
+              <h3>Crypto</h3>
+              <div class="asset-value">$352,500</div>
+              <div class="asset-percent">9.9%</div>
+              <div class="asset-perf negative">-22.8% (12M)</div>
+            </div>
+            <a href="portfolio-crypto.html" class="asset-link">Ver detalle →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Performance Comparison -->
+    <section>
+      <h2>📈 PERFORMANCE vs BENCHMARKS (12M)</h2>
+      
+      <div class="benchmark-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Portfolio / Benchmark</th>
+              <th class="right">Return 12M</th>
+              <th class="right">Volatility</th>
+              <th class="right">Sharpe</th>
+              <th class="right">Max DD</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="highlight">
+              <td><strong>🎯 MI PORTFOLIO</strong></td>
+              <td class="right positive"><strong>+21.9%</strong></td>
+              <td class="right">13.8%</td>
+              <td class="right">1.42</td>
+              <td class="right negative">-8.5%</td>
+            </tr>
+            <tr>
+              <td>SPY (S&P 500)</td>
+              <td class="right">+18.3%</td>
+              <td class="right">13.8%</td>
+              <td class="right">1.20</td>
+              <td class="right negative">-10.5%</td>
+            </tr>
+            <tr>
+              <td>QQQ (Nasdaq)</td>
+              <td class="right">+25.6%</td>
+              <td class="right">18.2%</td>
+              <td class="right">1.28</td>
+              <td class="right negative">-15.3%</td>
+            </tr>
+            <tr>
+              <td>60/40 Portfolio</td>
+              <td class="right">+12.4%</td>
+              <td class="right">8.5%</td>
+              <td class="right">1.15</td>
+              <td class="right negative">-6.2%</td>
+            </tr>
+            <tr>
+              <td>Gold (GLD)</td>
+              <td class="right">+68.0%</td>
+              <td class="right">22.5%</td>
+              <td class="right">2.85</td>
+              <td class="right negative">-12.8%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="info-box success">
+        <strong>✅ ALPHA:</strong> +3.6% vs SPY. Outperformance viene de rotación sectorial 
+        (materials/energy) + healthcare quality + menor drawdown en correcciones.
+      </div>
+    </section>
+
+    <!-- Montly Returns -->
+    <section>
+      <h2>📅 RETORNOS MENSUALES 2025-2026</h2>
+      
+      <div class="monthly-returns-grid">
+        <div class="month-card positive">
+          <div class="month-name">Feb 2026</div>
+          <div class="month-return">+2.1%</div>
+        </div>
+        <div class="month-card positive">
+          <div class="month-name">Ene 2026</div>
+          <div class="month-return">+6.3%</div>
+        </div>
+        <div class="month-card positive">
+          <div class="month-name">Dic 2025</div>
+          <div class="month-return">+4.8%</div>
+        </div>
+        <div class="month-card positive">
+          <div class="month-name">Nov 2025</div>
+          <div class="month-return">+3.2%</div>
+        </div>
+        <div class="month-card negative">
+          <div class="month-name">Oct 2025</div>
+          <div class="month-return">-2.5%</div>
+        </div>
+        <div class="month-card positive">
+          <div class="month-name">Sep 2025</div>
+          <div class="month-return">+5.7%</div>
+        </div>
+        <div class="month-card positive">
+          <div class="month-name">Ago 2025</div>
+          <div class="month-return">+1.9%</div>
+        </div>
+        <div class="month-card negative">
+          <div class="month-name">Jul 2025</div>
+          <div class="month-return">-1.2%</div>
+        </div>
+        <div class="month-card positive">
+          <div class="month-name">Jun 2025</div>
+          <div class="month-return">+4.1%</div>
+        </div>
+        <div class="month-card positive">
+          <div class="month-name">May 2025</div>
+          <div class="month-return">+2.8%</div>
+        </div>
+        <div class="month-card negative">
+          <div class="month-name">Abr 2025</div>
+          <div class="month-return">-3.8%</div>
+        </div>
+        <div class="month-card positive">
+          <div class="month-name">Mar 2025</div>
+          <div class="month-return">+6.9%</div>
+        </div>
+      </div>
+
+      <div class="monthly-stats">
+        <div class="stat-item">
+          <span>Meses positivos:</span>
+          <strong>10 / 12</strong>
+        </div>
+        <div class="stat-item">
+          <span>Win rate:</span>
+          <strong>83.3%</strong>
+        </div>
+        <div class="stat-item">
+          <span>Mejor mes:</span>
+          <strong>+6.9% (Mar 2025)</strong>
+        </div>
+        <div class="stat-item">
+          <span>Peor mes:</span>
+          <strong>-3.8% (Abr 2025)</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- Links Rápidos -->
+    <section class="portfolio-links">
+      <h2>🔗 ACCESO A SUB-PORTFOLIOS</h2>
+      
+      <div class="subportfolio-grid">
+        <a href="portfolio-stocks.html" class="subport-card">
+          <div class="subport-icon">📊</div>
+          <h3>Equity Portfolio</h3>
+          <p>20 posiciones | $2.84M</p>
+          <div class="subport-perf positive">+22.7%</div>
+        </a>
+
+        <a href="portfolio-forex.html" class="subport-card">
+          <div class="subport-icon">💱</div>
+          <h3>Forex Trades</h3>
+          <p>7 posiciones | $355K</p>
+          <div class="subport-perf positive">+18.4%</div>
+        </a>
+
+        <a href="portfolio-crypto.html" class="subport-card">
+          <div class="subport-icon">₿</div>
+          <h3>Crypto Portfolio</h3>
+          <p>3 posiciones | $352K</p>
+          <div class="subport-perf negative">-22.8%</div>
+        </a>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    // Script mínimo para esta página
+    console.log('Portfolio consolidado loaded');
+  </script>
+</body>
+</html>
